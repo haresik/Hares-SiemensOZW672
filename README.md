@@ -2,6 +2,8 @@
 
 Modified integration for the Siemens OZW672 device (Web server platform for remote plant monitoring of Siemens LPB/BSB plants). This integration has been used to control a **Hotjet heat pump** with the **RVS41.813/109** control unit.
 
+If you like it, [![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=haresoft&button_colour=FFDD00&font_colour=000000&outline_colour=000000&coffee_colour=ffffff)](https://buymeacoffee.com/haresoft)
+
 ## Source & inspiration
 
 This integration is based on and inspired by the original work:
