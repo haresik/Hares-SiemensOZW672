@@ -14,6 +14,18 @@ Additional changes have been made to support **adding and removing tracked entit
 
 Installation and usage follow the same principles as the original integration; configure via the Home Assistant UI (Settings → Devices & Services → Add Integration → Siemens OZW672).
 
+<img width="2052" height="300" alt="obrazek" src="https://github.com/user-attachments/assets/7b8ba1bd-9f50-40b3-b4f1-f28a28ea2b99" />
+
+<img width="1974" height="1641" alt="obrazek" src="https://github.com/user-attachments/assets/b2fb99f0-e1a3-410d-81f9-3c7d850a6d74" />
+
+Configuration, adding or delete entity ...
+
+<img width="803" height="1421" alt="obrazek" src="https://github.com/user-attachments/assets/3add3134-bdb1-4ed9-a45d-8207d845c694" />
+
+Energy entity:
+
+<img width="2667" height="1379" alt="obrazek" src="https://github.com/user-attachments/assets/6b1446f2-4e1d-4a5d-ae7f-2b017855e44d" />
+
 ## Installation
 
 ### Register the component as a HACS custom repository
