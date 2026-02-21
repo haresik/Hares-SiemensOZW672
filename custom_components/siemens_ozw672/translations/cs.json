@@ -1,0 +1,123 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Siemens OZW672",
+        "description": "Pokud potřebujete pomoc s konfigurací, podívejte se sem: https://github.com/johnaherninfotrack/homeassistant_custom_siemensozw672\nPOZNÁMKA: Pokud potřebujete HTTP, ujistěte se, že je povoleno v zařízení:\n Home > 0.x OZW672.xx > Settings > Communication > Services",
+        "data": {
+          "hostname": "Hostname/IP",
+          "protocol": "Protokol: http/https",
+          "scaninterval": "Interval skenování",
+          "username": "Uživatelské jméno",
+          "password": "Heslo"
+        }
+      },
+      "device": {
+        "title": "Siemens OZW672 - Výběr zařízení",
+        "description": "Zde budou zobrazena pouze zařízení se stavem 'State: Generated'",
+        "data": {
+          "devicename": "Vyberte zařízení ke sledování",
+          "use_device_longname": "Použít Adresu+Typ jako název karty zařízení (např. „0.1 RVS41.813/109“; neovlivňuje entity_id)",
+          "prefix_with_function": "Přidat předponu entitám s funkcí? (např. \"RVS43.345/109->DHW - Legionella function\")",
+          "prefix_with_opline": "Přidat předponu entitám s číslem provozní linky? (např. \"1640 Legionella function\")"
+        }
+      },
+      "mainmenu": {
+        "title": "Siemens OZW672 - Hlavní menu",
+        "description": "Vyberte položky menu, které chcete objevit",
+        "data": {
+          "menuitems": "Vyberte jednu nebo více položek menu"
+        }
+      },
+      "submenu": {
+        "title": "Siemens OZW672 - Menu: {item_name}",
+        "description": "Vyberte položky menu a/nebo datové body ke sledování",
+        "data": {
+          "menuitems": "Vyberte jednu nebo více položek podmenu",
+          "datapoints": "Vyberte jeden nebo více datových bodů"
+        }
+      }
+    },
+    "error": {
+      "auth": "Uživatelské jméno/Heslo je nesprávné.",
+      "device_selection_error": "Neočekávaná chyba",
+      "timeout": "Vypršel časový limit připojení k zařízení."
+    },
+    "abort": {
+      "single_instance_allowed": "Je povolena pouze jedna instance."
+    }
+  },
+  "options": {
+    "step": {
+      "user": {
+        "data": {
+          "binary_sensor": "Doména binárního senzoru povolena",
+          "sensor": "Doména senzoru povolena",
+          "switch": "Doména spínače povolena",
+          "select": "Doména výběru povolena",
+          "number": "Doména čísla povolena",
+          "httptimeout": "HTTP časový limit (sec)",
+          "httpretries": "HTTP opakování",
+          "scaninterval": "Interval dotazování (sec)",
+          "add_datapoints": "Přidat datové body",
+          "remove_datapoints": "Odebrat datové body",
+          "add_energy_datapoints": "Přidat energetické datové body",
+          "remove_energy_datapoints": "Odebrat energetické datové body",
+          "use_device_longname": "Použít Adresu+Typ jako název karty zařízení (neovlivňuje entity_id)"
+        }
+      },
+      "add_datapoints_menu": {
+        "title": "Siemens OZW672 - Přidat datové body - Výběr menu",
+        "description": "Vyberte menu, ze kterého chcete přidat datové body",
+        "data": {
+          "menuitems": "Vyberte jednu nebo více položek menu"
+        }
+      },
+      "add_datapoints_submenu": {
+        "title": "Siemens OZW672 - Přidat datové body - Menu: {item_name}",
+        "description": "Vyberte položky menu a/nebo datové body k přidání",
+        "data": {
+          "menuitems": "Vyberte jednu nebo více položek podmenu",
+          "datapoints": "Vyberte jeden nebo více datových bodů"
+        }
+      },
+      "remove_datapoints": {
+        "title": "Siemens OZW672 - Odebrat datové body",
+        "description": "Vyberte datové body, které chcete odebrat ({count} dostupných)",
+        "data": {
+          "datapoints_to_remove": "Vyberte jeden nebo více datových bodů k odebrání"
+        }
+      },
+      "add_energy_datapoints": {
+        "title": "Siemens OZW672 - Přidat energetické datové body",
+        "description": "Vyberte datové body, které chcete přidat jako energetické ({count} dostupných, {energy_count} již přidáno)",
+        "data": {
+          "datapoints_to_add": "Vyberte jeden nebo více datových bodů k přidání"
+        }
+      },
+      "add_energy_datapoints_power": {
+        "title": "Siemens OZW672 - Nastavit výkon pro energetické datové body",
+        "description": "Zadejte výkon (W) pro každý vybraný datový bod ({count} datových bodů)",
+        "data": {}
+      },
+      "remove_energy_datapoints": {
+        "title": "Siemens OZW672 - Odebrat energetické datové body",
+        "description": "Vyberte energetické datové body, které chcete odebrat ({count} dostupných)",
+        "data": {
+          "energy_datapoints_to_remove": "Vyberte jeden nebo více energetických datových bodů k odebrání"
+        }
+      }
+    },
+    "error": {
+      "different_device_selected": "Vybrané jiné zařízení než výchozí. Pro přidání datapointů z jiného zařízení musíte vytvořit nový config entry pro toto zařízení.",
+      "connection_failed": "Nepodařilo se připojit k zařízení. Zkontrolujte připojení a přihlašovací údaje.",
+      "menu_error": "Chyba při načítání menu ze zařízení.",
+      "no_menu_items": "Nebyly nalezeny žádné položky menu.",
+      "no_new_items": "V tomto menu nejsou žádné nové položky k přidání.",
+      "no_datapoints": "Nejsou k dispozici žádné datové body.",
+      "all_datapoints_already_added": "Všechny datové body jsou již přidány jako energetické.",
+      "no_energy_datapoints": "Nejsou k dispozici žádné energetické datové body."
+    }
+  }
+}
+

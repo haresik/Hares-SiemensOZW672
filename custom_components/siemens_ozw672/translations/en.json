@@ -1,0 +1,122 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Siemens OZW672",
+        "description": "If you need help with the configuration have a look here: https://github.com/johnaherninfotrack/homeassistant_custom_siemensozw672\nNOTE: If you require HTTP, please ensure it is enabled in the device:\n Home > 0.x OZW672.xx > Settings > Communication > Services",
+        "data": {
+          "hostname": "Hostname/IP",
+          "protocol": "Protocol: http/https",
+          "scaninterval": "Scan Interval",
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "device": {
+        "title": "Siemens OZW672 - Device Selection",
+        "description": "Only devices with 'State: Generated' will be displayed here",
+        "data": {
+          "devicename": "Select the Device to monitor",
+          "use_device_longname": "Use Address+Type as device card name (e.g. \"0.1 RVS41.813/109\"; does not affect entity_id)",
+          "prefix_with_function": "Prefix entities with Function? (eg \"RVS43.345/109->DHW - Legionella function\")",
+          "prefix_with_opline": "Prefix entities with Operating Line Number? (eg \"1640 Legionella function\")"
+        }
+      },
+      "mainmenu": {
+        "title": "Siemens OZW672 - Main Menu",
+        "description": "Please chose the Menu Item(s) you wish to discover",
+        "data": {
+          "menuitems": "Select one or more Menu Items"
+        }
+      },
+      "submenu": {
+        "title": "Siemens OZW672 - Menu: {item_name}",
+        "description": "Select the Menu Items and/or Data Points to monitor",
+        "data": {
+          "menuitems": "Select one or more Submenu Items",
+          "datapoints": "Select one or more Data Points"
+        }
+      }
+    },
+    "error": {
+      "auth": "Username/Password is wrong.",
+      "device_selection_error": "Unexpected Error",
+      "timeout": "Timeout connecting to the device."
+    },
+    "abort": {
+      "single_instance_allowed": "Only a single instance is allowed."
+    }
+  },
+  "options": {
+    "step": {
+      "user": {
+        "data": {
+          "binary_sensor": "Binary sensor domain enabled",
+          "sensor": "Sensor domain enabled",
+          "switch": "Switch domain enabled",
+          "select": "Select domain enabled",
+          "number": "Number domain enabled",
+          "httptimeout": "HTTP Timeout (sec)",
+          "httpretries": "HTTP Retries",
+          "scaninterval": "Polling Interval (sec)",
+          "add_datapoints": "Add Data Points",
+          "remove_datapoints": "Remove Data Points",
+          "add_energy_datapoints": "Add Energy Data Points",
+          "remove_energy_datapoints": "Remove Energy Data Points",
+          "use_device_longname": "Use Address+Type as device card name (does not affect entity_id)"
+        }
+      },
+      "add_datapoints_menu": {
+        "title": "Siemens OZW672 - Add Data Points - Menu Selection",
+        "description": "Select the menu from which you want to add data points",
+        "data": {
+          "menuitems": "Select one or more Menu Items"
+        }
+      },
+      "add_datapoints_submenu": {
+        "title": "Siemens OZW672 - Add Data Points - Menu: {item_name}",
+        "description": "Select the Menu Items and/or Data Points to add",
+        "data": {
+          "menuitems": "Select one or more Submenu Items",
+          "datapoints": "Select one or more Data Points"
+        }
+      },
+      "remove_datapoints": {
+        "title": "Siemens OZW672 - Remove Data Points",
+        "description": "Select the data points you want to remove ({count} available)",
+        "data": {
+          "datapoints_to_remove": "Select one or more Data Points to remove"
+        }
+      },
+      "add_energy_datapoints": {
+        "title": "Siemens OZW672 - Add Energy Data Points",
+        "description": "Select the data points you want to add as energy ({count} available, {energy_count} already added)",
+        "data": {
+          "datapoints_to_add": "Select one or more Data Points to add"
+        }
+      },
+      "add_energy_datapoints_power": {
+        "title": "Siemens OZW672 - Set Power for Energy Data Points",
+        "description": "Enter power (W) for each selected data point ({count} data points)",
+        "data": {}
+      },
+      "remove_energy_datapoints": {
+        "title": "Siemens OZW672 - Remove Energy Data Points",
+        "description": "Select the energy data points you want to remove ({count} available)",
+        "data": {
+          "energy_datapoints_to_remove": "Select one or more Energy Data Points to remove"
+        }
+      }
+    },
+    "error": {
+      "different_device_selected": "A different device than the default was selected. To add datapoints from another device, you must create a new config entry for that device.",
+      "connection_failed": "Failed to connect to device. Please check connection and credentials.",
+      "menu_error": "Error loading menu from device.",
+      "no_menu_items": "No menu items found.",
+      "no_new_items": "No new items available to add in this menu.",
+      "no_datapoints": "No data points available.",
+      "all_datapoints_already_added": "All data points are already added as energy.",
+      "no_energy_datapoints": "No energy data points available."
+    }
+  }
+}
