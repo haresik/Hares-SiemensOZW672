@@ -2,10 +2,9 @@
   "domain": "siemens_ozw672",
   "name": "Hares Siemens OZW672",
   "version": "1.0.0",
-  "documentation": "https://github.com/johnaherninfotrack/homeassistant_custom_siemensozw672",
-  "issue_tracker": "https://github.com/johnaherninfotrack/homeassistant_custom_siemensozw672/issues",
+  "documentation": "https://github.com/haresik/Hares-SiemensOZW672",
   "dependencies": [],
   "config_flow": true,
-  "codeowners": ["@johnaherninfotrack"],
+  "codeowners": ["@haresik"],
   "requirements": []
 }
